@@ -1,0 +1,194 @@
+bandit0
+
+Cygwin64 Terminal
+
+
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+password = bandit0
+
+
+cat readme
+
+
+		Level 1:
+=========================
+
+ssh bandit1@bandit.labs.overthewire.org -p 2220	
+
+password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1		
+
+http://www.trapkit.de/tools/checksec.sh
+wget http://www.trapkit.de/tools/checksec.sh
+
+https://github.com/downloads/user/repository/filename
+
+
+linux command:
+
+find -name "pass*.*"
+find -name "pass*.*" -print 2>/dev/null
+
+
+pwd -- prints working directory name
+mv dir_2/file_b.txt dir_1
+mv dir_2/file_c.txt dir_2/file_d.txt
+cp path/to/old_file path/to/new_file
+rm path/to/file
+mkdir path/to/new_directory/
+
+
+		Level 2:
+=========================
+password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+		Level 3:
+=========================
+password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+ls -a  -- list of all files include hidden files
+ls -al -- with attributes
+
+drwxr-xr-x   #   userID   group   size   date   time   dirname
+
+
+USER	
+	Read (r)	The account owner can list the files in the directory.
+	Write (w)	The account owner can create or delete files in the directory.
+	Execute (x)	access files in that directory by name (such as Web page files).
+GROUP
+	Read (r)	Everyone in the designated group can list the files in the directory.
+	Write (w)	Everyone in the group can create or delete files in the directory.
+	Execute (x)	Everyone in the group can change (cd) into the directory and access files in that directory by name (such as Web page files).
+OTHER	
+	Read (r)	Anyone can list the files in the directory.
+	Write (w)	Anyone can create or delete files in the directory.
+	Execute (x)	Anyone can change (cd) into the directory and access files in that directory by name (such as Web page files).
+
+	cp .hidden ../../../tmp/p.txt
+	cat ../../tmp/p.txt
+
+cd ./inhere	
+cat .hidden
+
+		Level 4:
+=========================
+password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+		  
+
+cd /home/bandit4/inhere
+
+import glob, os
+import shutil , time
+os.chdir("/home/bandit4/inhere")
+files = glob.glob("*")
+for f in files[:]:
+	file1 = open(f,"r") ;    print file1.read() ; time.sleep(1)
+	
+	
+
+		Level 5:
+=========================
+
+password: 					koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+		  
+
+cd /tmp
+mkdir shoham
+cd shoham
+
+cd /home/bandit5/inhere
+
+-rw-r--r--  1 root root     220 May 15  2017 .bash_logout
+-rw-r--r--  1 root root    3526 May 15  2017 .bashrc
+drwxr-x--- 22 root bandit5 4096 May  7 20:15 inhere
+-rw-r--r--  1 root root     675 May 15  2017 .profile
+
+
+
+import os
+dir = '/home/bandit5/inhere'
+ld =  os.listdir(dir)
+	
+def get_dir(dir):
+    return [file for file in os.listdir(dir) if file.startswith('.')]
+file_object = open('/tmp/shoham/all_hiden.txt', 'w')
+
+for d in ld:
+	dd = dir+'/'+d
+	fl = get_dir(dd)
+	for f in fl:	
+		fn = dd + '/' + f
+		file1 = open(f,"r")  
+		
+		line =  file1.read()  
+		file_object.write('\n\n')
+		file_object.write(f)
+		file_object.write('\n--------------------------\n')
+		if len(line)<100:
+			file_object.write(line)
+		file1.close()
+file_object.close()
+
+
+
+
+
+import glob, os
+import shutil , time
+
+file_object = open('/tmp/shoham/all.txt', 'w')
+
+os.chdir("/home/bandit5/inhere")
+files = glob.glob('/home/bandit5/inhere/**/*')
+for f in files[:]:
+	file1 = open(f,"r")  
+	
+	line =  file1.read()  
+	file_object.write('\n\n')
+	file_object.write(f)
+	file_object.write('\n--------------------------\n')
+	if len(line)<100:
+		file_object.write(line)
+	file1.close()
+file_object.close()
+
+
+		Level 6:
+=========================
+
+
+password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+cd /var/lib/dpkg/info
+
+
+../../../var/lib/dpkg/info:
+
+-rw-r--r-- 1 root    root       6085 Jan 18  2019 apt-utils.md5sums
+-rw-r----- 1 bandit7 bandit6      33 May  7 20:15 bandit7.password
+-rw-r--r-- 1 root    root        134 Feb 23  2020 base-files.conffiles
+
+		Level 7:
+=========================
+
+password: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+
+Halley  H7Mg53D6bPDpleFYGp1KF1SKTQh7jiNl
+millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+shied   OfMT7PpeOvra4NWlZz7JOzyjL236NFVF
+
+
+		Level 8:
+=========================
+
+password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+/home/bandit8/data.txt
+
+
+
+
+
+
