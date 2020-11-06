@@ -2,7 +2,7 @@
 
 
 import os
-
+# /home/bandit8/data.txt
 with open('data.txt') as f:
     pas = f.read().splitlines()
 

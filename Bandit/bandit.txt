@@ -35,7 +35,10 @@ mv dir_2/file_b.txt dir_1
 mv dir_2/file_c.txt dir_2/file_d.txt
 cp path/to/old_file path/to/new_file
 rm path/to/file
-mkdir path/to/new_directory/
+
+cd /tmp
+mkdir ps
+chmod 777 ps
 
 
 		Level 2:
@@ -91,7 +94,14 @@ for f in files[:]:
 =========================
 
 password: 					koReBOKuIDDepwhWk7jZC0RTdopnAYKh
-		  
+
+
+find -size 1033c
+find -size 1033c -exec cat {} \;
+
+
+
+find /home/ -type f -size 1033c -exec ls {} \;
 
 cd /tmp
 mkdir shoham
@@ -103,6 +113,7 @@ cd /home/bandit5/inhere
 -rw-r--r--  1 root root    3526 May 15  2017 .bashrc
 drwxr-x--- 22 root bandit5 4096 May  7 20:15 inhere
 -rw-r--r--  1 root root     675 May 15  2017 .profile
+
 
 
 
@@ -187,6 +198,10 @@ password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 /home/bandit8/data.txt
 
+		Level 9:
+=========================
+
+password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 
 

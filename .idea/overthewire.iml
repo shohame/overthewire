@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/gef-dev/tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/paramiko" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/paramiko/sites" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
