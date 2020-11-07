@@ -203,7 +203,40 @@ password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
+nano + ^w (search)
 
+strings data.txt | grep '===='
+
+
+		Level 10:
+=========================
+
+password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+base64 -d data.txt
+
+
+		Level 11:
+=========================
+
+password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh
+
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+tr 'abc' 'POI' <<< 'bca'
+
+tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "The Quick Brown Fox Jumps Over The Lazy Dog"
+
+strings data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+
+		Level 12:
+=========================
+
+password: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
 
 
