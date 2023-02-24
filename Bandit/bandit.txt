@@ -16,38 +16,19 @@ cat readme
 
 ssh bandit1@bandit.labs.overthewire.org -p 2220	
 
-password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1		
+password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
-http://www.trapkit.de/tools/checksec.sh
-wget http://www.trapkit.de/tools/checksec.sh
-
-https://github.com/downloads/user/repository/filename
-
-
-linux command:
-
-find -name "pass*.*"
-find -name "pass*.*" -print 2>/dev/null
-
-
-pwd -- prints working directory name
-mv dir_2/file_b.txt dir_1
-mv dir_2/file_c.txt dir_2/file_d.txt
-cp path/to/old_file path/to/new_file
-rm path/to/file
-
-cd /tmp
-mkdir ps
-chmod 777 ps
-
+cat ./-
 
 		Level 2:
 =========================
-password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+cat spaces\ in\ this\ filename
 
 		Level 3:
 =========================
-password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 ls -a  -- list of all files include hidden files
 ls -al -- with attributes
@@ -76,7 +57,7 @@ cat .hidden
 
 		Level 4:
 =========================
-password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 		  
 
 cd /home/bandit4/inhere
@@ -362,3 +343,28 @@ andit13@bandit:~$ ssh bandit14@localhost -i sshkey.private
 
 
  BfMYroe26WYalil77FoDi9qh59eK5xNr
+ 
+ 
+ 
+ 
+ http://www.trapkit.de/tools/checksec.sh
+wget http://www.trapkit.de/tools/checksec.sh
+
+https://github.com/downloads/user/repository/filename
+
+
+linux command:
+
+find -name "pass*.*"
+find -name "pass*.*" -print 2>/dev/null
+
+
+pwd -- prints working directory name
+mv dir_2/file_b.txt dir_1
+mv dir_2/file_c.txt dir_2/file_d.txt
+cp path/to/old_file path/to/new_file
+rm path/to/file
+
+cd /tmp
+mkdir ps
+chmod 777 ps
