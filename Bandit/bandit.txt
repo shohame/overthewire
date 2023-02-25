@@ -67,14 +67,14 @@ import shutil , time
 os.chdir("/home/bandit4/inhere")
 files = glob.glob("*")
 for f in files[:]:
-	file1 = open(f,"r") ;    print file1.read() ; time.sleep(1)
+	file1 = open(f,"r") ;    print file1.f() ; time.sleep(1)
 	
 	
 
 		Level 5:
 =========================
 
-password: 					koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+password: 					lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 
 find -size 1033c

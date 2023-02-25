@@ -14,22 +14,29 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 
 Password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
+cd /tmp
+mkdir perry4
+git cd perry4
+cd /tmp/perry4
 
 
-
-
-
+rm -r /tmp/perry4
 
 """
 
 
 from pathlib import Path
-import time
+
 path = Path('/home/bandit4/inhere')
 files = path.glob("*")
+files.sort()
+
 for f in files:
-    file1 = open(f, "r")
-    data = file1.read()
-    print (f'{f} :\n {data}')
-    time.sleep(1)
-    file1.close()
+    try:
+        file1 = open(f, "rb")
+        data = file1.read()
+        print (f'{f} :\n {data}')
+        file1.close()
+    except:
+        print(f'{f} :\n Error reading file!')
+
