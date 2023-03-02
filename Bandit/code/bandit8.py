@@ -26,9 +26,7 @@ python3 main.py
 
 rm -r /tmp/temp
 
-
 """
 
 from pathlib import Path
-
 path = Path('/')
