@@ -22,6 +22,23 @@ cd /tmp/perry4
 
 rm -r /tmp/perry4
 
+whoami
+getent passwd
+getent group
+getent passwd bandit4
+getent group bandit4
+
+ll
+ll /etc
+
+drwxr-xr-x   2 root     root       4096 Feb 16 02:10 libnl-3/
+drwxr-xr-x   4 root     root       4096 Feb 21 21:58 lighttpd/
+-rw-r--r--   1 root     root       2996 Mar  4  2022 locale.alias
+-rw-r--r--   1 root     root       9456 Feb 16 02:11 locale.gen
+lrwxrwxrwx   1 root     root         27 Feb 16 02:10 localtime -> /usr/share/zoneinfo/Etc/UTC
+drwxr-xr-x   4 root     root       4096 Feb 16 02:10 logcheck/
+
+
 """
 
 
