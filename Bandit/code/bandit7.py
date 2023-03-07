@@ -25,8 +25,7 @@ rm -r temp
 
 cat data.txt | grep -e millionth
 grep data.txt -e millionth
-
-try this:
+grep millionth data.txt
 grep millionth data.txt | awk '{print $2}'
 
 """
