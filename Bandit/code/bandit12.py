@@ -17,8 +17,62 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
 
 Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
+
+https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5
+
+1f8b - is gzip format: .gz
+
 mkdir /tmp/temp
 cd /tmp/temp
+
+cat ~/data.txt
+
+    #  1f8b - is gzip format: .gz
+
+xxd -r ~/data.txt data.gz
+
+gzip -d data
+xxd -ps data
+
+        Bzip .bz	42 5a	BZ
+
+mv data data.bz
+bzip2 -d data
+xxd -ps data
+
+        #  gzip format  	.gz	   1f 8b
+
+mv data data.gz
+gzip -d data
+xxd -ps data
+mv data data.tar
+
+tar -xf data.tar
+xxd -ps data5.bin
+
+mv data5.bin data5.tar
+tar -xf data5.tar
+
+xxd -ps data6.bin
+
+        Bzip	.bz	42 5a
+
+mv data6.bin data6.bz
+
+bzip2 -d data6.bz
+
+xxd -ps data6
+mv data6 data6.tar
+tar -xf data6.tar
+
+xxd -ps data8.bin
+        #  gzip format	.gz	1f 8b
+mv data8.bin data8.gz
+
+gzip -d data8
+
+cat data8
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 nano main.py
 python3 main.py
