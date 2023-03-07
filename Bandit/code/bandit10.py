@@ -26,7 +26,30 @@ python3 main.py
 
 rm -r /tmp/temp
 
+
+base64 -d data.txt
+
 """
 
+import os
+import base64
 from pathlib import Path
-path = Path('/')
+
+if os.name == 'nt':
+    fn = Path('../data/bandit10_data.txt')
+else:
+    fn = Path('/home/bandit10/data.txt')
+
+def stringToBase64(s):
+    return base64.b64encode(s.encode('utf-8'))
+
+def base64ToString(b):
+    return base64.b64decode(b).decode('utf-8')
+
+
+with open(fn, 'r') as fid:
+    b64 = fid.read()
+
+txt = base64ToString(b64)
+print(txt)
+
