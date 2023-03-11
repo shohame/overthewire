@@ -17,13 +17,10 @@ ssh bandit13@bandit.labs.overthewire.org -p 2220
 
 Password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
-mkdir /tmp/temp
-cd /tmp/temp
 
-nano main.py
-python3 main.py
+ssh bandit14@localhost -p2220 -i sshkey.private
 
-rm -r /tmp/temp
+cat /etc/bandit_pass/bandit14
 
 """
 

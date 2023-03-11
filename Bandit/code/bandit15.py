@@ -18,7 +18,12 @@ OpenSSL Cookbook - Testing with OpenSSL
 
 ssh bandit15@bandit.labs.overthewire.org -p 2220
 
-Password: ?????????????????????????????
+Password: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+
+echo "jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt" | openssl s_client -connect localhost:30001 -ign_eof
+
+
 
 mkdir /tmp/temp
 cd /tmp/temp
@@ -30,5 +35,35 @@ rm -r /tmp/temp
 
 """
 
-from pathlib import Path
-path = Path('/')
+
+""" it doesn't work.
+
+import socket 
+import ssl
+
+def send_ssl_message(server_hostname, port, message):
+    # Create a socket object
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Wrap the socket with an SSL context
+    context = ssl.create_default_context()
+    ssl_sock = context.wrap_socket(s, server_hostname="localhost")
+    # Connect to the server
+    ssl_sock.connect((server_hostname, port))
+    # Send the message
+    ssl_sock.sendall(message)
+    # Receive the response
+    response = ssl_sock.recv(1024)
+    # Close the socket
+    ssl_sock.close()
+    return response.decode()
+
+
+server_hostname = 'localhost'
+port = 300001
+message = f'jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt\n'
+response = send_ssl_message(server_hostname, port, message)
+
+print (response)
+
+"""
+

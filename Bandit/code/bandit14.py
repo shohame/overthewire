@@ -21,7 +21,11 @@ Port (computer networking) on Wikipedia
 
 ssh bandit14@bandit.labs.overthewire.org -p 2220
 
-Password: ?????????????????????????????
+Password: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+
+echo fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq | nc localhost 30000
+
 
 mkdir /tmp/temp
 cd /tmp/temp
@@ -33,5 +37,22 @@ rm -r /tmp/temp
 
 """
 
-from pathlib import Path
-path = Path('/')
+import socket
+
+def send_message(host, port, message):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.connect((host, port))
+        s.sendall(message.encode())
+        data = s.recv(1024)
+    return data.decode('utf-8').strip()
+
+
+HOST = 'localhost'
+HOST = 'bandit.labs.overthewire.org'
+PORT = 30000
+MSG = f'fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq\n'
+
+res_msg = send_message(HOST, PORT, MSG)
+print (res_msg)
+
+

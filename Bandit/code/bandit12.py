@@ -20,7 +20,6 @@ Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5
 
-1f8b - is gzip format: .gz
 
 mkdir /tmp/temp
 cd /tmp/temp
@@ -31,8 +30,11 @@ cat ~/data.txt
 
 xxd -r ~/data.txt data.gz
 
+file data.gz
+
 gzip -d data
 xxd -ps data
+file data
 
         Bzip .bz	42 5a	BZ
 
@@ -80,6 +82,18 @@ python3 main.py
 rm -r /tmp/temp
 
 """
-
 from pathlib import Path
-path = Path('/')
+import os
+from bandit12_utils import hexdump_to_binary, determine_file_type
+
+if os.name == 'nt':
+    fn = Path('../data/bandit12_data.txt')
+else:
+    fn = Path('/home/bandit12/data.txt')
+
+fn_out = '../data/bandit12_data.bin'
+
+hexdump_to_binary(fn, fn_out)
+
+txt = determine_file_type(fn_out)
+print (txt)
