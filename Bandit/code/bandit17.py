@@ -13,7 +13,6 @@ NOTE: if you have solved this level and see ‘Byebye!’ when trying to log int
 Commands you may need to solve this level
 cat, grep, ls, diff
 
-ssh bandit17@bandit.labs.overthewire.org -p 2220
 
 Password: ?????????????????????????????
 
@@ -50,13 +49,22 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 mkdir /tmp/temp
 cd /tmp/temp
+nano bandit17.key
+# put the key inside
+chmod 600 bandit17.key
 
-nano main.py
-python3 main.py
-
+ssh -i bandit17.key bandit17@bandit.labs.overthewire.org -p 2220
 rm -r /tmp/temp
 
+ssh bandit17@bandit.labs.overthewire.org -p 2220
+VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+
+
+diff passwords.new passwords.old
+
 """
+
+
 
 from pathlib import Path
 path = Path('/')

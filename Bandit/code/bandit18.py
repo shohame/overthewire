@@ -11,10 +11,17 @@ The password for the next level is stored in a file readme in the homedirectory.
 Commands you may need to solve this level
 ssh, ls, cat
 
-
 ssh bandit18@bandit.labs.overthewire.org -p 2220
+ssh -T bandit18@bandit.labs.overthewire.org -p 2220
 
-Password: ?????????????????????????????
+Password:
+
+< hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+---
+> f9wS9ZUDvZoo3PooHgYuuWdawDFvGld2
+
+
+cat readme
 
 mkdir /tmp/temp
 cd /tmp/temp

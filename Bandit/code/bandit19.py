@@ -14,17 +14,9 @@ setuid on Wikipedia
 
 ssh bandit19@bandit.labs.overthewire.org -p 2220
 
-Password: ?????????????????????????????
+Password:   awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
-mkdir /tmp/temp
-cd /tmp/temp
-
-nano main.py
-python3 main.py
-
-rm -r /tmp/temp
+./bandit20-do cat /etc/bandit_pass/bandit20
 
 """
 
-from pathlib import Path
-path = Path('/')
